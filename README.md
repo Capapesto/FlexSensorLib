@@ -4,13 +4,13 @@
 
 # Biblioteca de Sensores de Flexao (Flex Sensors) para ESP32
 
-[cite_start]Esta biblioteca foi desenvolvida para realizar a leitura e o calculo de curvatura de ate dois sensores de flexao utilizando o conversor analogico-digital (ADC) do ESP32 atraves do framework ESP-IDF.
+[cite_start]Esta biblioteca foi desenvolvida para realizar a leitura e o calculo de curvatura de ate dois sensores de flexao(EXPANSIVO) utilizando o conversor analogico-digital (ADC) do ESP32 atraves do framework ESP-IDF.
 
 [cite_start]A biblioteca converte o valor bruto do ADC (0 a 4095) e calcula a resistencia real em Ohms [cite: 1][cite_start], alem de retornar a curvatura normalizada em uma escala de 0.0 (totalmente plano) a 1.0 (totalmente dobrado).
 
----
+---------------------------------------
 
-## Configuracao do Circuito Eletrico
+## Configuracao do Hardware
 
 Para que o ESP32 possa ler o sensor de flexao, e necessario montar um circuito de divisor de tensao para cada sensor. 
 
@@ -22,7 +22,7 @@ Para que o ESP32 possa ler o sensor de flexao, e necessario montar um circuito d
    * [cite_start]**Sensor 0:** Conectar ao pino **GPIO 0** (ADC1 Canal 0).
    * [cite_start]**Sensor 1:** Conectar ao pino **GPIO 1** (ADC1 Canal 1).
 
----
+---------------------------------------
 
 ## Como Integrar ao Codigo
 
